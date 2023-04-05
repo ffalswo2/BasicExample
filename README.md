@@ -1,2 +1,2 @@
 # BasicExample
-- [final 쓰는 이유](https://www.notion.so/go-sopt/final-c32ce9ab1ee043f1a9553db2437d3f49?pvs=4)
+- [final 쓰는 이유](https://complex-rook-29b.notion.site/final-fd49dc5c7c2b4b379aba29a57aee631b)

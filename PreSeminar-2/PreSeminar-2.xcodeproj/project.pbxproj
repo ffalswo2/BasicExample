@@ -16,6 +16,8 @@
 		B598C09029DFEEBA00FDEF04 /* DelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598C08F29DFEEBA00FDEF04 /* DelegateViewController.swift */; };
 		B598C09229DFF08500FDEF04 /* AnimationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598C09129DFF08500FDEF04 /* AnimationButton.swift */; };
 		B598C09429DFF1A400FDEF04 /* PressCountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598C09329DFF1A400FDEF04 /* PressCountViewController.swift */; };
+		B598C09829E155B200FDEF04 /* HalfBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598C09729E155B200FDEF04 /* HalfBottomSheetViewController.swift */; };
+		B598C09C29E1D11400FDEF04 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598C09B29E1D11400FDEF04 /* BottomSheetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		B598C08F29DFEEBA00FDEF04 /* DelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateViewController.swift; sourceTree = "<group>"; };
 		B598C09129DFF08500FDEF04 /* AnimationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationButton.swift; sourceTree = "<group>"; };
 		B598C09329DFF1A400FDEF04 /* PressCountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressCountViewController.swift; sourceTree = "<group>"; };
+		B598C09729E155B200FDEF04 /* HalfBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfBottomSheetViewController.swift; sourceTree = "<group>"; };
+		B598C09B29E1D11400FDEF04 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 				B598C08329DFE70D00FDEF04 /* LaunchScreen.storyboard */,
 				B598C08629DFE70D00FDEF04 /* Info.plist */,
 				B598C09129DFF08500FDEF04 /* AnimationButton.swift */,
+				B598C09729E155B200FDEF04 /* HalfBottomSheetViewController.swift */,
+				B598C09B29E1D11400FDEF04 /* BottomSheetViewController.swift */,
 			);
 			path = "PreSeminar-2";
 			sourceTree = "<group>";
@@ -168,7 +174,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B598C09429DFF1A400FDEF04 /* PressCountViewController.swift in Sources */,
+				B598C09C29E1D11400FDEF04 /* BottomSheetViewController.swift in Sources */,
 				B598C07D29DFE70D00FDEF04 /* ZigZagViewController.swift in Sources */,
+				B598C09829E155B200FDEF04 /* HalfBottomSheetViewController.swift in Sources */,
 				B598C09029DFEEBA00FDEF04 /* DelegateViewController.swift in Sources */,
 				B598C07929DFE70D00FDEF04 /* AppDelegate.swift in Sources */,
 				B598C07B29DFE70D00FDEF04 /* SceneDelegate.swift in Sources */,

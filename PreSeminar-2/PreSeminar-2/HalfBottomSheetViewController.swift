@@ -6,24 +6,44 @@
 //
 
 import UIKit
+import SnapKit
 
-class HalfBottomSheetViewController: UIViewController {
+final class HalfBottomSheetViewController: UIViewController {
+
+    private lazy var button: UIButton = {
+        var config = UIButton.Configuration.filled()
+        config.background.backgroundColor = .blue
+        let button = UIButton(configuration: config)
+        return button
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        style()
+        setLayout()
+        setAction()
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func style() {
+        view.backgroundColor = .white
     }
-    */
 
+    private func setLayout() {
+        view.addSubview(button)
+        button.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+        }
+
+    }
+
+    private func setAction() {
+        let action = UIAction { _ in
+            let bottomSheetViewController = BottomSheetViewController()
+            bottomSheetViewController.modalPresentationStyle = .overFullScreen
+            self.present(bottomSheetViewController, animated: false) {
+                bottomSheetViewController.showBottomSheetWithAnimation()
+            }
+        }
+        button.addAction(action, for: .touchUpInside)
+    }
 }

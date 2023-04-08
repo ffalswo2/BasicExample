@@ -9,12 +9,6 @@ import UIKit
 
 final class DelegateViewController: UIViewController {
 
-    private var count = 0 {
-        didSet {
-            updateNumberLabel(count)
-        }
-    }
-
     private let numberLabel: UILabel = {
         let label = UILabel()
         label.text = "조금만 더 눌러봐...0"
@@ -39,9 +33,7 @@ final class DelegateViewController: UIViewController {
         let action = UIAction { _ in
             let pressCountViewController = PressCountViewController()
             pressCountViewController.delegate = self
-            self.present(pressCountViewController, animated: true) {
-                self.count = 0
-            }
+            self.present(pressCountViewController, animated: true)
         }
         button.addAction(action, for: .touchUpInside)
         return button
@@ -83,7 +75,8 @@ final class DelegateViewController: UIViewController {
 // MARK: - Delegate
 
 extension DelegateViewController: PressCountViewControllerDelegate {
-    func didTapPressButton() {
-        count += 1
+    
+    func didTapBackButton(count: Int) {
+        updateNumberLabel(count)
     }
 }

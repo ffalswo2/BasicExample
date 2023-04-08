@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AnimationButton: UIButton {
+final class AnimationButton: UIButton {
 
     @frozen
     private enum Animation {

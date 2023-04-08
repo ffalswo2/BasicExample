@@ -8,10 +8,12 @@
 import UIKit
 
 protocol PressCountViewControllerDelegate: AnyObject {
-    func didTapPressButton()
+    func didTapBackButton(count: Int)
 }
 
 final class PressCountViewController: UIViewController {
+
+    private var count = 0
 
     weak var delegate: PressCountViewControllerDelegate?
 
@@ -24,7 +26,7 @@ final class PressCountViewController: UIViewController {
         button.configuration = config
 
         let action = UIAction { _ in
-            self.delegate?.didTapPressButton()
+            self.count += 1
         }
         button.addAction(action, for: .touchUpInside)
         return button
@@ -39,6 +41,7 @@ final class PressCountViewController: UIViewController {
         button.configuration = config
 
         let action = UIAction { _ in
+            self.delegate?.didTapBackButton(count: self.count)
             self.dismiss(animated: true)
         }
         button.addAction(action, for: .touchUpInside)

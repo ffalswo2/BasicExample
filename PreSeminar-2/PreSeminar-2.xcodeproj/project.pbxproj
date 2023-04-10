@@ -66,6 +66,7 @@
 		B598C07729DFE70D00FDEF04 /* PreSeminar-2 */ = {
 			isa = PBXGroup;
 			children = (
+				B598C09D29E3140400FDEF04 /* BottomSheet */,
 				B598C09629DFFB7800FDEF04 /* Delegate */,
 				B598C09529DFFB6E00FDEF04 /* AutoLayout */,
 				B598C07829DFE70D00FDEF04 /* AppDelegate.swift */,
@@ -74,8 +75,6 @@
 				B598C08329DFE70D00FDEF04 /* LaunchScreen.storyboard */,
 				B598C08629DFE70D00FDEF04 /* Info.plist */,
 				B598C09129DFF08500FDEF04 /* AnimationButton.swift */,
-				B598C09729E155B200FDEF04 /* HalfBottomSheetViewController.swift */,
-				B598C09B29E1D11400FDEF04 /* BottomSheetViewController.swift */,
 			);
 			path = "PreSeminar-2";
 			sourceTree = "<group>";
@@ -95,6 +94,15 @@
 				B598C09329DFF1A400FDEF04 /* PressCountViewController.swift */,
 			);
 			path = Delegate;
+			sourceTree = "<group>";
+		};
+		B598C09D29E3140400FDEF04 /* BottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				B598C09729E155B200FDEF04 /* HalfBottomSheetViewController.swift */,
+				B598C09B29E1D11400FDEF04 /* BottomSheetViewController.swift */,
+			);
+			path = BottomSheet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -18,6 +18,7 @@ final class BottomSheetViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        view.backgroundColor = .black.withAlphaComponent(0.5)
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -61,6 +62,7 @@ extension BottomSheetViewController {
         UIView.animate(withDuration: 0.8) {
             self.view.layoutIfNeeded()
         } completion: { _ in
+            self.view.backgroundColor = .white
             self.dismiss(animated: true)
         }
     }

@@ -22,6 +22,7 @@ final class HalfBottomSheetViewController: UIViewController {
         style()
         setLayout()
         setAction()
+        view.backgroundColor = .white
     }
 
     private func style() {

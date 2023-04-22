@@ -7,11 +7,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: BaseViewController {
+
+    private let originView = CommonView()
+
+    override func loadView() {
+        self.view = originView
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .blue
     }
 
 

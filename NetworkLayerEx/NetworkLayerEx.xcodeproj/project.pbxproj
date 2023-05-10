@@ -23,6 +23,10 @@
 		B575075D2A05AC4E009FC995 /* SignUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B575075C2A05AC4E009FC995 /* SignUpService.swift */; };
 		B575075F2A05AD00009FC995 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B575075E2A05AD00009FC995 /* NetworkResult.swift */; };
 		B57507622A05AD9F009FC995 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57507612A05AD9F009FC995 /* BaseService.swift */; };
+		B5F22DD52A0ADCF2006F5552 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F22DD42A0ADCF2006F5552 /* BaseResponse.swift */; };
+		B5F22DD72A0ADD13006F5552 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F22DD62A0ADD13006F5552 /* Config.swift */; };
+		B5F22DD92A0AE1AA006F5552 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F22DD82A0AE1AA006F5552 /* APIError.swift */; };
+		B5F22DDB2A0AEA21006F5552 /* APIEventLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F22DDA2A0AEA21006F5552 /* APIEventLogger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +47,10 @@
 		B575075C2A05AC4E009FC995 /* SignUpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpService.swift; sourceTree = "<group>"; };
 		B575075E2A05AD00009FC995 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		B57507612A05AD9F009FC995 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		B5F22DD42A0ADCF2006F5552 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		B5F22DD62A0ADD13006F5552 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		B5F22DD82A0AE1AA006F5552 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		B5F22DDA2A0AEA21006F5552 /* APIEventLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEventLogger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,9 @@
 				B575074E2A059EFB009FC995 /* TargetType.swift */,
 				B57507502A05A11B009FC995 /* HTTPHeaderField.swift */,
 				B575075E2A05AD00009FC995 /* NetworkResult.swift */,
+				B5F22DD42A0ADCF2006F5552 /* BaseResponse.swift */,
+				B5F22DD62A0ADD13006F5552 /* Config.swift */,
+				B5F22DDA2A0AEA21006F5552 /* APIEventLogger.swift */,
 			);
 			path = BaseNetwork;
 			sourceTree = "<group>";
@@ -116,6 +127,7 @@
 			children = (
 				B575075A2A05AA02009FC995 /* SignUpTarget.swift */,
 				B575075C2A05AC4E009FC995 /* SignUpService.swift */,
+				B5F22DD82A0AE1AA006F5552 /* APIError.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -200,15 +212,19 @@
 				B575075B2A05AA02009FC995 /* SignUpTarget.swift in Sources */,
 				B575074F2A059EFB009FC995 /* TargetType.swift in Sources */,
 				B575075F2A05AD00009FC995 /* NetworkResult.swift in Sources */,
+				B5F22DD72A0ADD13006F5552 /* Config.swift in Sources */,
 				B57507512A05A11B009FC995 /* HTTPHeaderField.swift in Sources */,
 				B57507562A05A53C009FC995 /* SignUpResponse.swift in Sources */,
 				B575073C2A059D6A009FC995 /* ViewController.swift in Sources */,
 				B57507382A059D6A009FC995 /* AppDelegate.swift in Sources */,
+				B5F22DD92A0AE1AA006F5552 /* APIError.swift in Sources */,
 				B57507582A05A597009FC995 /* SignUp.swift in Sources */,
 				B57507622A05AD9F009FC995 /* BaseService.swift in Sources */,
+				B5F22DDB2A0AEA21006F5552 /* APIEventLogger.swift in Sources */,
 				B575073A2A059D6A009FC995 /* SceneDelegate.swift in Sources */,
 				B575075D2A05AC4E009FC995 /* SignUpService.swift in Sources */,
 				B57507542A05A515009FC995 /* SignUpRequest.swift in Sources */,
+				B5F22DD52A0ADCF2006F5552 /* BaseResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +254,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BASE_URL = "http://54.180.123.11";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -298,6 +315,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BASE_URL = "http://54.180.123.11";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

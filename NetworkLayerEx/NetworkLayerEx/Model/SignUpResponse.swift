@@ -8,20 +8,14 @@
 import Foundation
 
 
-struct SignUpResponse: Decodable {
-    let code: Int
-    let message: String
-    let data: UserInfo?
-}
-
-struct UserInfo: Decodable {
+struct SignUpResponseDTO: Decodable {
     let userId: Int
     let nickname: String
 }
 
 
-extension SignUpResponse {
+extension SignUpResponseDTO {
     var toDomain: SignUp {
-        return SignUp(nickname: data?.nickname ?? "")
+        return SignUp(nickname: nickname)
     }
 }

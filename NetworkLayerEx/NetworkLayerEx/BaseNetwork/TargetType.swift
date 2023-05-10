@@ -18,7 +18,7 @@ protocol TargetType: URLRequestConvertible {
 
 extension TargetType {
     var baseURL: String {
-        return "http://54.180.123.11"
+        return Config.baseURL
     }
 }
 
@@ -50,6 +50,7 @@ extension TargetType {
         case .requestPlain:
             break
         }
+        print(urlRequest.url)
 
         return urlRequest
     }

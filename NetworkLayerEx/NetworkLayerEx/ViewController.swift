@@ -18,16 +18,18 @@ class ViewController: UIViewController {
 
 
     private func signUp() {
-        let request = SignUpRequest(email: "fsdfsd@naver.com", nickname: "inJtelK", password: "1234!")
-        
-        SignUpService.shared.signUp(request: request) { response in
+        let request = SignUpRequest(email: "kkkkkkk@naver.com", nickname: "inJtelK", password: "RM31rrrrrrr!")
+
+        SignUpService.shared.signUp(request: request, type: SignUpResponseDTO.self) { response in
             switch response {
             case .success(let data):
-                guard let data = data as? SignUpResponse else {
-                    print("decode failed")
+//                dump(data)
+                guard let data = data as? SignUpResponseDTO else {
+                    print("no data")
                     return
                 }
-                dump(data)
+
+//                dump(data)
             default:
                 return
             }

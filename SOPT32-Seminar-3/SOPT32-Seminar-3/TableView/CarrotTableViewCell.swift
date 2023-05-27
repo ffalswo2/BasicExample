@@ -7,8 +7,12 @@
 
 import UIKit
 
-final class CarrotTableViewCell: UITableViewCell {
+import SnapKit
 
+
+
+final class CarrotTableViewCell: UITableViewCell {
+    var closure: ((_ flag: Bool)->Void)?
     private lazy var carrotImage = UIImageView()
     private let productLabel = UILabel()
     private let placeLabel = UILabel()
@@ -16,6 +20,14 @@ final class CarrotTableViewCell: UITableViewCell {
     private let reservationLabel = UILabel()
     private let priceLabel = UILabel()
     private let horizontalStackView = UIStackView()
+    lazy var button: UIButton = {
+        let button = UIButton()
+        button.setImage(UIImage(systemName: "star")?.withRenderingMode(.alwaysTemplate), for: .normal)
+        button.setImage(UIImage(systemName: "star.fill")?.withRenderingMode(.alwaysTemplate), for: .selected)
+        button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        button.tintColor = .black
+        return button
+    }()
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -78,11 +90,17 @@ final class CarrotTableViewCell: UITableViewCell {
 
     private func setLayout() {
         [carrotImage, productLabel, placeLabel,
-         timeLabel, horizontalStackView]
+         timeLabel, horizontalStackView, button]
             .forEach { contentView.addSubview($0) }
 
         [reservationLabel, priceLabel]
             .forEach { horizontalStackView.addArrangedSubview($0) }
+
+        button.snp.makeConstraints {
+            $0.size.equalTo(20)
+            $0.centerY.equalTo(carrotImage)
+            $0.trailing.equalToSuperview().inset(20)
+        }
 
         carrotImage.snp.makeConstraints {
             $0.size.equalTo(100)
@@ -139,4 +157,32 @@ final class CarrotTableViewCell: UITableViewCell {
         priceLabel.text = price + "원"
     }
 
+    func configureCell(_ dto: PostDTO) {
+
+        carrotImage.image = UIImage(named: dto.img)
+        productLabel.text = dto.name
+        placeLabel.text = dto.location
+        timeLabel.text = dto.date
+
+        // enum 프로퍼티에서 만든 프로퍼티에 return값에 따라 매칭
+        reservationLabel.text = dto.status
+
+        // endIndex에 접근해서 맨뒤 기준으로 3칸 앞에 있는 곳에 "," 추가
+        // 1000원 -> 1,000원
+        var price = String(dto.price)
+        if price.count > 3 {
+            price.insert(",", at: price.index(price.endIndex, offsetBy: -3))
+        }
+        priceLabel.text = price + "원"
+        priceLabel.textColor = .black
+        button.isSelected = true
+    }
+
+}
+
+extension CarrotTableViewCell {
+    @objc
+    func buttonTapped(sender: UIButton) {
+        self.closure?(sender.isSelected)
+    }
 }

@@ -9,7 +9,7 @@ import Foundation
 
 import Alamofire
 
-class APIEventLogger: EventMonitor {
+final class APIEventLogger: EventMonitor {
     func requestDidFinish(_ request: Request) {
         print("🛰 NETWORK Reqeust LOG")
         print(request.description)

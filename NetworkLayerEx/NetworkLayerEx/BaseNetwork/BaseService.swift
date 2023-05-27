@@ -9,8 +9,12 @@ import Foundation
 
 import Alamofire
 
-class BaseService {
+protocol BaseService {
+    func judgeStatus<T: Decodable>(by statusCode: Int, _ data: Data, type: T.Type) -> NetworkResult<BaseResponseType<T>>
+    func isValidData<T: Decodable>(data: Data, type: T.Type) -> NetworkResult<BaseResponseType<T>>
+}
 
+extension BaseService {
     func judgeStatus<T: Decodable>(by statusCode: Int, _ data: Data, type: T.Type) -> NetworkResult<BaseResponseType<T>> {
         switch statusCode {
         case 201: return isValidData(data: data, type: T.self)
@@ -20,7 +24,7 @@ class BaseService {
         }
     }
 
-    private func isValidData<T: Decodable>(data: Data, type: T.Type) -> NetworkResult<BaseResponseType<T>> {
+    func isValidData<T: Decodable>(data: Data, type: T.Type) -> NetworkResult<BaseResponseType<T>> {
         let decoder = JSONDecoder()
         guard let decodedData = try? decoder.decode(BaseResponseType<T>.self, from: data) else {
             print("json decoded failed !")
@@ -29,4 +33,10 @@ class BaseService {
 
         return .success(decodedData)
     }
+
 }
+
+//class BaseService {
+//
+//
+//}

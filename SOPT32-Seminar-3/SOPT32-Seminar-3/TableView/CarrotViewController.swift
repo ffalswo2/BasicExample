@@ -9,6 +9,7 @@ import UIKit
 
 final class CarrotViewController: BaseViewController {
 
+    private let realm = RealmService()
     private let tableView = UITableView()
 
     private let dummy = Carrot.dummy()
@@ -46,6 +47,28 @@ extension CarrotViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CarrotTableViewCell.className, for: indexPath) as? CarrotTableViewCell else { return UITableViewCell() }
 
         cell.configureCell(dummy[indexPath.item])
+        cell.closure = { [weak self] isSelected in
+            guard let self else { return }
+            let post = PostDTO(
+                id: self.dummy[indexPath.item].id,
+                img: "hypeBoy",
+                name: self.dummy[indexPath.item].product,
+                location: self.dummy[indexPath.item].place,
+                date: self.dummy[indexPath.item].time,
+                price: self.dummy[indexPath.item].price.description,
+                status: self.dummy[indexPath.item].tradeStatus.title
+            )
+
+            if isSelected {
+                self.realm.deletePost(dto: post)
+                cell.button.isSelected.toggle()
+                return
+            }
+
+            guard self.realm.checkUniquePost(input: post) else { return }
+            self.realm.addPost(item: post)
+            cell.button.isSelected.toggle()
+        }
         return cell
     }
 

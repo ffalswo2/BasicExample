@@ -8,6 +8,7 @@
 import UIKit
 
 struct Carrot {
+    let id: Int
     let image: UIImage
     let product: String
     let place: String
@@ -53,34 +54,39 @@ enum Trade {
 extension Carrot {
 
     static func dummy() -> [Carrot] {
-        return [Carrot(image: .hypeBoy,
+        return [Carrot(id: 1,
+            image: .hypeBoy,
                        product: "에어팟 프로 2",
                        place: "하계 2동",
                        time: "일주일 전",
                        tradeStatus: .completed,
                        price: 200000),
-                Carrot(image: .hypeBoy,
+                Carrot(id: 2,
+                    image: .hypeBoy,
                        product:
                         "아이폰 11 Pro",
                        place: "하계 3동",
                        time: "4월 2일",
                        tradeStatus: .reservation,
                        price: 100000),
-                Carrot(image: .hypeBoy,
+                Carrot(id: 3,
+                    image: .hypeBoy,
                        product:
                         "에어팟 맥스",
                        place: "공릉 2동",
                        time: "1일 전",
                        tradeStatus: .shared,
                        price: 100000),
-                Carrot(image: .hypeBoy,
+                Carrot(id: 4,
+                    image: .hypeBoy,
                        product:
                         "아이패드1",
                        place: "공릉 1동",
                        time: "6시간 전",
                        tradeStatus: .completed,
                        price: 100000),
-                Carrot(image: .hypeBoy,
+                Carrot(id: 5,
+                    image: .hypeBoy,
                        product:
                         "아이패드 2",
                        place: "중계 2동",
@@ -88,7 +94,8 @@ extension Carrot {
                        tradeStatus: .clear,
                        price: 100000)
                 ,
-                Carrot(image: .hypeBoy,
+                Carrot(id: 6,
+                    image: .hypeBoy,
                        product:
                         "안팔아요",
                        place: "중계 2동",
@@ -96,7 +103,8 @@ extension Carrot {
                        tradeStatus: .completed,
                        price: 0)
                 ,
-                Carrot(image: .hypeBoy,
+                Carrot(id: 7,
+                    image: .hypeBoy,
                        product:
                         "아이폰 14 Pro",
                        place: "중계 2동",

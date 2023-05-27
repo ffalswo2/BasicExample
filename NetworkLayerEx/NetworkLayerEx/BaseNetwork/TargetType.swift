@@ -50,7 +50,6 @@ extension TargetType {
         case .requestPlain:
             break
         }
-        print(urlRequest.url)
 
         return urlRequest
     }

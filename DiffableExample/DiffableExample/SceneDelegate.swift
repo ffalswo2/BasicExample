@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  SOPT32-Seminar-3
+//  DiffableExample
 //
-//  Created by 김민재 on 2023/04/22.
+//  Created by 김민재 on 2023/05/11.
 //
 
 import UIKit
@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         self.window = UIWindow(windowScene: windowScene)
-        let navigationController = UINavigationController(rootViewController: TabBarController())
+        let navigationController = UINavigationController(rootViewController: AddEditViewController())
         self.window?.rootViewController = navigationController
         self.window?.makeKeyAndVisible()
     }

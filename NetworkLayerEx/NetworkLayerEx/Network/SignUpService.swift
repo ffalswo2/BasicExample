@@ -10,9 +10,10 @@ import Foundation
 import Alamofire
 
 final class SignUpService: BaseService {
+
     static let shared = SignUpService()
 
-    private override init() {}
+    private init() {}
 
     func signUp<T: Decodable>(request: SignUpRequest,
                               type: T.Type,

@@ -12,24 +12,24 @@ import RealmSwift
 
 struct PostDTO: Equatable {
     var id: Int
-    var img: String = ""
-    var name: String = ""
-    var location: String = ""
-    var date: String = ""
-    var price: String = ""
-    var status: String = ""
+    var img: String
+    var name: String
+    var location: String
+    var date: String
+    var price: String
+    var status: String
 }
 
 final class RealmStoragePost: Object {
 
     @Persisted(primaryKey: true) var id: Int
 
-    @Persisted var img: String?
-    @Persisted var name: String?
-    @Persisted var location: String?
-    @Persisted var date: String?
-    @Persisted var price: String?
-    @Persisted var status: String?
+    @Persisted var img: String
+    @Persisted var name: String
+    @Persisted var location: String
+    @Persisted var date: String
+    @Persisted var price: String
+    @Persisted var status: String
 
     override static func primaryKey() -> String? {
       return "RealmStoragePost"

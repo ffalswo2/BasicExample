@@ -51,21 +51,9 @@ final class RealmService {
     }
 
     func convertToStoragePost(input: Results<RealmStoragePost>) -> [PostDTO] {
-        var storagePosts = [PostDTO]()
-        let inputSize = input.count
-        for index in 0 ..< inputSize {
-            let post = PostDTO(
-                id: input[index].id,
-                img: input[index].img ?? "",
-                name: input[index].name ?? "",
-                location: input[index].location ?? "",
-                date: input[index].date ?? "",
-                price: input[index].price ?? "",
-                status: input[index].status ?? ""
-            )
-            storagePosts.append(post)
+        return Array(input).map {
+            return PostDTO(id: $0.id, img: $0.img, name: $0.name, location: $0.location, date: $0.date, price: $0.price, status: $0.status)
         }
-        return storagePosts
     }
 
     // 스키마 수정시 한번 돌려야 한다.

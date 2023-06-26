@@ -42,9 +42,6 @@ actor UserInfo {
     nonisolated var age: Int {
         return 20
     }
-
-    nonisolated var age = 20
-
     var names = [String]()
 
     func appendName() {

@@ -102,7 +102,7 @@ extension ViewController: UITableViewDelegate {
     }
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        // scroll 내리다가 visible cell position
+
         guard let visibleCells = curriTableView.visibleCells as? [WeekTableViewCell],
               let firstCell = visibleCells.first
         else { return }
@@ -116,24 +116,27 @@ extension ViewController: UITableViewDelegate {
 
         let newIndexPath = IndexPath(item: indexPath.section, section: 0)
 
-        // curriTableView.indexPathsForVisibleRows 이거쓰면 위에 메서드 두줄 함축 가능하네?? 개꿀ㅋㅋ
+        
 
+        // scroll 내리다가 visible cell position
+        // curriTableView.indexPathsForVisibleRows 이거쓰면 위에 메서드 두줄 함축 가능하네?? 개꿀ㅋㅋ
+        let direction: UICollectionView.ScrollPosition = indexPath.item < newIndexPath.item
+        ? .right
+        : .left
+
+        monthCollectionView.scrollToItem(at: newIndexPath, at: direction, animated: true)
 
 
 
         guard let cell = monthCollectionView.cellForItem(at: newIndexPath) as? MonthCollectionViewCell else { return }
-        guard let visibleCells = monthCollectionView.visibleCells as? [MonthCollectionViewCell] else { return }
         cell.isSelected = true
+        guard let visibleCells = monthCollectionView.visibleCells as? [MonthCollectionViewCell] else { return }
         let otherCells = visibleCells.filter { $0 != cell }
         otherCells.forEach { cell in
             cell.isSelected = false
         }
 
-        // scrollToItem
 
-
-
-        
     }
 
 }
@@ -167,11 +170,19 @@ extension ViewController: UITableViewDataSource {
 extension ViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         // 개월 누르면 해당 TableView Section으로 scroll 되야함.
-        guard let currItem = curriCollectionView.indexPathsForVisibleItems.first?.item else { return }
+        let toIndexPath = IndexPath(row: 0, section: indexPath.item)
+        print("🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀")
+        print(toIndexPath.section, toIndexPath.row)
+
+        curriTableView.scrollToRow(at: toIndexPath, at: .top, animated: true)
+
+        // 개월 수를 눌러서 table view scroll되는 거 ,
+        // 그냥 원래 tableView scroll을 분기해야함.
 
 
-
-
+        // scrollDidScroll을 critical section이라고 생각하면 앞 뒤로 유사 lock을 걸어서
+        // critical section, 즉 scroll delegate에 두 개의 호출이 들어오지 못하게 해야함.
+        //
     }
 
 }
@@ -181,6 +192,12 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
 }
 
 extension ViewController: UICollectionViewDataSource {
+
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = MonthTableViewSectionHeaderView()
+        view.monthText = "\(section + 1)개월"
+        return view
+    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView == monthCollectionView {

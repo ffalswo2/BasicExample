@@ -107,14 +107,14 @@ class WeekTableViewCell: UITableViewCell {
 
 
         containerView.snp.makeConstraints { make in
-            make.leading.equalToSuperview().inset(60)
+            make.leading.equalToSuperview().inset(90)
             make.top.bottom.equalToSuperview().inset(10)
             make.trailing.equalToSuperview().inset(10)
         }
 
         circleView.snp.makeConstraints { make in
             make.top.equalTo(containerView)
-            make.trailing.equalTo(containerView.snp.leading).offset(-30)
+            make.trailing.equalTo(containerView.snp.leading).offset(-10)
             make.size.equalTo(24)
         }
 

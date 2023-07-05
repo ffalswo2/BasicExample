@@ -17,6 +17,11 @@
 		B532E80F2A50629100F0DB19 /* MonthCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B532E80E2A50629100F0DB19 /* MonthCollectionViewCell.swift */; };
 		B532E8132A50687B00F0DB19 /* WeekTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B532E8122A50687B00F0DB19 /* WeekTableViewCell.swift */; };
 		B532E8152A506B6600F0DB19 /* Curriculum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B532E8142A506B6600F0DB19 /* Curriculum.swift */; };
+		B532E8192A52CC6C00F0DB19 /* MonthTableViewSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B532E8182A52CC6C00F0DB19 /* MonthTableViewSectionHeaderView.swift */; };
+		B532E81C2A53E2C700F0DB19 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B532E81B2A53E2C700F0DB19 /* BottomSheetView.swift */; };
+		B532E81E2A53E37800F0DB19 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B532E81D2A53E37800F0DB19 /* MainViewController.swift */; };
+		B532E8202A53E79600F0DB19 /* CurriculumTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B532E81F2A53E79600F0DB19 /* CurriculumTableHeaderView.swift */; };
+		B532E8222A53EB2D00F0DB19 /* CurriTableSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B532E8212A53EB2D00F0DB19 /* CurriTableSectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +36,12 @@
 		B532E80E2A50629100F0DB19 /* MonthCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthCollectionViewCell.swift; sourceTree = "<group>"; };
 		B532E8122A50687B00F0DB19 /* WeekTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekTableViewCell.swift; sourceTree = "<group>"; };
 		B532E8142A506B6600F0DB19 /* Curriculum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curriculum.swift; sourceTree = "<group>"; };
+		B532E8182A52CC6C00F0DB19 /* MonthTableViewSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthTableViewSectionHeaderView.swift; sourceTree = "<group>"; };
+		B532E81B2A53E2C700F0DB19 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		B532E81D2A53E37800F0DB19 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B532E81F2A53E79600F0DB19 /* CurriculumTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumTableHeaderView.swift; sourceTree = "<group>"; };
+		B532E8212A53EB2D00F0DB19 /* CurriTableSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriTableSectionView.swift; sourceTree = "<group>"; };
+		B532E8232A53FF0300F0DB19 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +75,7 @@
 		B532E7F42A50580100F0DB19 /* ExpandCell */ = {
 			isa = PBXGroup;
 			children = (
+				B532E81A2A53E2B500F0DB19 /* BottomSheet */,
 				B532E8112A50686900F0DB19 /* TableViewCell */,
 				B532E8102A50686200F0DB19 /* CollectionViewCell */,
 				B532E7F52A50580100F0DB19 /* AppDelegate.swift */,
@@ -90,8 +102,21 @@
 			isa = PBXGroup;
 			children = (
 				B532E8122A50687B00F0DB19 /* WeekTableViewCell.swift */,
+				B532E8182A52CC6C00F0DB19 /* MonthTableViewSectionHeaderView.swift */,
 			);
 			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		B532E81A2A53E2B500F0DB19 /* BottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				B532E81B2A53E2C700F0DB19 /* BottomSheetView.swift */,
+				B532E81D2A53E37800F0DB19 /* MainViewController.swift */,
+				B532E81F2A53E79600F0DB19 /* CurriculumTableHeaderView.swift */,
+				B532E8212A53EB2D00F0DB19 /* CurriTableSectionView.swift */,
+				B532E8232A53FF0300F0DB19 /* test.swift */,
+			);
+			path = BottomSheet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,11 +197,16 @@
 			files = (
 				B532E80D2A50628700F0DB19 /* CurriCollectionViewCell.swift in Sources */,
 				B532E8132A50687B00F0DB19 /* WeekTableViewCell.swift in Sources */,
+				B532E81C2A53E2C700F0DB19 /* BottomSheetView.swift in Sources */,
+				B532E8222A53EB2D00F0DB19 /* CurriTableSectionView.swift in Sources */,
+				B532E8192A52CC6C00F0DB19 /* MonthTableViewSectionHeaderView.swift in Sources */,
 				B532E8152A506B6600F0DB19 /* Curriculum.swift in Sources */,
 				B532E80F2A50629100F0DB19 /* MonthCollectionViewCell.swift in Sources */,
 				B532E7FA2A50580100F0DB19 /* ViewController.swift in Sources */,
 				B532E7F62A50580100F0DB19 /* AppDelegate.swift in Sources */,
 				B532E7F82A50580100F0DB19 /* SceneDelegate.swift in Sources */,
+				B532E8202A53E79600F0DB19 /* CurriculumTableHeaderView.swift in Sources */,
+				B532E81E2A53E37800F0DB19 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

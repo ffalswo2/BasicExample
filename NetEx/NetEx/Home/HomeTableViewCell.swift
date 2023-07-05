@@ -53,9 +53,21 @@ class HomeTableViewCell: UITableViewCell {
     }
 
     func requestWithMediaType(type: MediaType) {
-        NetworkLayer.request(mediaType: type) { movieModel in
-            self.movieModel = movieModel
+//        Before
+//        NetworkLayer.request(mediaType: type) { movieModel in
+//            self.movieModel = movieModel
+//        }
+
+        /// After: async - await 적용
+        Task {
+            do {
+                let model = try await NetworkLayer.requestMediaAsync(mediaType: type)
+                self.movieModel = model
+            } catch {
+                print(error)
+            }
         }
+
     }
 
 }

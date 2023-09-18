@@ -10,12 +10,15 @@ import Foundation
 public class DependencyContainer {
 
     private var dependencies = [String: Weak]()
+    private let lock = NSLock()
 
     private static let shared = DependencyContainer()
     private init() {}
 
     public static func register<T>(_ dependency: T) {
+        shared.lock.lock()
         shared.register(dependency)
+        shared.lock.unlock()
     }
 
     public static func resolve<T>() -> T {

@@ -9,9 +9,9 @@ import Foundation
 
 
 class Weak: Equatable {
-    weak var value: AnyObject?
+    weak var value: Any?
 
-    init(value: AnyObject) {
+    init(value: Any) {
         self.value = value
     }
 

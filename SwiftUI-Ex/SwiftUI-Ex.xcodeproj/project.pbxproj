@@ -18,6 +18,7 @@
 		B570407D2B593BBA002587DB /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570407C2B593BBA002587DB /* Shape.swift */; };
 		B570407F2B59581B002587DB /* ColorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570407E2B59581B002587DB /* ColorsView.swift */; };
 		B57040812B595F06002587DB /* GradientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57040802B595F06002587DB /* GradientsView.swift */; };
+		B57040832B59627F002587DB /* IconsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57040822B59627F002587DB /* IconsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		B570407C2B593BBA002587DB /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 		B570407E2B59581B002587DB /* ColorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsView.swift; sourceTree = "<group>"; };
 		B57040802B595F06002587DB /* GradientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientsView.swift; sourceTree = "<group>"; };
+		B57040822B59627F002587DB /* IconsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				B570407C2B593BBA002587DB /* Shape.swift */,
 				B570407E2B59581B002587DB /* ColorsView.swift */,
 				B57040802B595F06002587DB /* GradientsView.swift */,
+				B57040822B59627F002587DB /* IconsView.swift */,
 			);
 			path = "SwiftUI-Ex";
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				B570407F2B59581B002587DB /* ColorsView.swift in Sources */,
 				B565706F2B59356C00F46525 /* SwiftUI_ExApp.swift in Sources */,
 				B57040812B595F06002587DB /* GradientsView.swift in Sources */,
+				B57040832B59627F002587DB /* IconsView.swift in Sources */,
 				B570407D2B593BBA002587DB /* Shape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,6 +16,7 @@
 		B565708C2B59356E00F46525 /* SwiftUI_ExUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565708B2B59356E00F46525 /* SwiftUI_ExUITestsLaunchTests.swift */; };
 		B56570992B59363600F46525 /* MJTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56570982B59363600F46525 /* MJTextView.swift */; };
 		B570407D2B593BBA002587DB /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570407C2B593BBA002587DB /* Shape.swift */; };
+		B570407F2B59581B002587DB /* ColorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570407E2B59581B002587DB /* ColorsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		B565708B2B59356E00F46525 /* SwiftUI_ExUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ExUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B56570982B59363600F46525 /* MJTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MJTextView.swift; sourceTree = "<group>"; };
 		B570407C2B593BBA002587DB /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		B570407E2B59581B002587DB /* ColorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				B56570742B59356E00F46525 /* Preview Content */,
 				B56570982B59363600F46525 /* MJTextView.swift */,
 				B570407C2B593BBA002587DB /* Shape.swift */,
+				B570407E2B59581B002587DB /* ColorsView.swift */,
 			);
 			path = "SwiftUI-Ex";
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			files = (
 				B56570712B59356C00F46525 /* ContentView.swift in Sources */,
 				B56570992B59363600F46525 /* MJTextView.swift in Sources */,
+				B570407F2B59581B002587DB /* ColorsView.swift in Sources */,
 				B565706F2B59356C00F46525 /* SwiftUI_ExApp.swift in Sources */,
 				B570407D2B593BBA002587DB /* Shape.swift in Sources */,
 			);

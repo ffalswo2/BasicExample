@@ -14,6 +14,7 @@
 		B56570802B59356E00F46525 /* SwiftUI_ExTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565707F2B59356E00F46525 /* SwiftUI_ExTests.swift */; };
 		B565708A2B59356E00F46525 /* SwiftUI_ExUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56570892B59356E00F46525 /* SwiftUI_ExUITests.swift */; };
 		B565708C2B59356E00F46525 /* SwiftUI_ExUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B565708B2B59356E00F46525 /* SwiftUI_ExUITestsLaunchTests.swift */; };
+		B56570992B59363600F46525 /* MJTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56570982B59363600F46525 /* MJTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B56570852B59356E00F46525 /* SwiftUI-ExUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-ExUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56570892B59356E00F46525 /* SwiftUI_ExUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ExUITests.swift; sourceTree = "<group>"; };
 		B565708B2B59356E00F46525 /* SwiftUI_ExUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ExUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B56570982B59363600F46525 /* MJTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MJTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				B56570702B59356C00F46525 /* ContentView.swift */,
 				B56570722B59356E00F46525 /* Assets.xcassets */,
 				B56570742B59356E00F46525 /* Preview Content */,
+				B56570982B59363600F46525 /* MJTextView.swift */,
 			);
 			path = "SwiftUI-Ex";
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B56570712B59356C00F46525 /* ContentView.swift in Sources */,
+				B56570992B59363600F46525 /* MJTextView.swift in Sources */,
 				B565706F2B59356C00F46525 /* SwiftUI_ExApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

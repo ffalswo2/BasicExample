@@ -22,6 +22,7 @@
 		B57040852B596701002587DB /* ImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57040842B596701002587DB /* ImagesView.swift */; };
 		B570408C2B5B6796002587DB /* FramesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570408B2B5B6796002587DB /* FramesView.swift */; };
 		B570408E2B5B6FD1002587DB /* BackgroundAndOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570408D2B5B6FD1002587DB /* BackgroundAndOverlay.swift */; };
+		B57040902B5CEEF7002587DB /* StacksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570408F2B5CEEF7002587DB /* StacksView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		B57040842B596701002587DB /* ImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesView.swift; sourceTree = "<group>"; };
 		B570408B2B5B6796002587DB /* FramesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramesView.swift; sourceTree = "<group>"; };
 		B570408D2B5B6FD1002587DB /* BackgroundAndOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAndOverlay.swift; sourceTree = "<group>"; };
+		B570408F2B5CEEF7002587DB /* StacksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StacksView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				B57040842B596701002587DB /* ImagesView.swift */,
 				B570408B2B5B6796002587DB /* FramesView.swift */,
 				B570408D2B5B6FD1002587DB /* BackgroundAndOverlay.swift */,
+				B570408F2B5CEEF7002587DB /* StacksView.swift */,
 			);
 			path = "SwiftUI-Ex";
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				B570408E2B5B6FD1002587DB /* BackgroundAndOverlay.swift in Sources */,
 				B565706F2B59356C00F46525 /* SwiftUI_ExApp.swift in Sources */,
 				B57040852B596701002587DB /* ImagesView.swift in Sources */,
+				B57040902B5CEEF7002587DB /* StacksView.swift in Sources */,
 				B57040812B595F06002587DB /* GradientsView.swift in Sources */,
 				B57040832B59627F002587DB /* IconsView.swift in Sources */,
 				B570407D2B593BBA002587DB /* Shape.swift in Sources */,

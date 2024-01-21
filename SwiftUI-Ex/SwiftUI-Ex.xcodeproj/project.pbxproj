@@ -23,6 +23,7 @@
 		B570408C2B5B6796002587DB /* FramesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570408B2B5B6796002587DB /* FramesView.swift */; };
 		B570408E2B5B6FD1002587DB /* BackgroundAndOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570408D2B5B6FD1002587DB /* BackgroundAndOverlay.swift */; };
 		B57040902B5CEEF7002587DB /* StacksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570408F2B5CEEF7002587DB /* StacksView.swift */; };
+		B57040922B5CFB47002587DB /* PaddingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57040912B5CFB47002587DB /* PaddingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		B570408B2B5B6796002587DB /* FramesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramesView.swift; sourceTree = "<group>"; };
 		B570408D2B5B6FD1002587DB /* BackgroundAndOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAndOverlay.swift; sourceTree = "<group>"; };
 		B570408F2B5CEEF7002587DB /* StacksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StacksView.swift; sourceTree = "<group>"; };
+		B57040912B5CFB47002587DB /* PaddingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				B570408B2B5B6796002587DB /* FramesView.swift */,
 				B570408D2B5B6FD1002587DB /* BackgroundAndOverlay.swift */,
 				B570408F2B5CEEF7002587DB /* StacksView.swift */,
+				B57040912B5CFB47002587DB /* PaddingView.swift */,
 			);
 			path = "SwiftUI-Ex";
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			files = (
 				B56570712B59356C00F46525 /* ContentView.swift in Sources */,
 				B570408C2B5B6796002587DB /* FramesView.swift in Sources */,
+				B57040922B5CFB47002587DB /* PaddingView.swift in Sources */,
 				B56570992B59363600F46525 /* MJTextView.swift in Sources */,
 				B570407F2B59581B002587DB /* ColorsView.swift in Sources */,
 				B570408E2B5B6FD1002587DB /* BackgroundAndOverlay.swift in Sources */,

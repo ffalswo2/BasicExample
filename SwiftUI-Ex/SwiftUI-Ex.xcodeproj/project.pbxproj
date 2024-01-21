@@ -24,6 +24,7 @@
 		B570408E2B5B6FD1002587DB /* BackgroundAndOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570408D2B5B6FD1002587DB /* BackgroundAndOverlay.swift */; };
 		B57040902B5CEEF7002587DB /* StacksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B570408F2B5CEEF7002587DB /* StacksView.swift */; };
 		B57040922B5CFB47002587DB /* PaddingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57040912B5CFB47002587DB /* PaddingView.swift */; };
+		B57040942B5D199D002587DB /* SpacerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57040932B5D199D002587DB /* SpacerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		B570408D2B5B6FD1002587DB /* BackgroundAndOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAndOverlay.swift; sourceTree = "<group>"; };
 		B570408F2B5CEEF7002587DB /* StacksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StacksView.swift; sourceTree = "<group>"; };
 		B57040912B5CFB47002587DB /* PaddingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingView.swift; sourceTree = "<group>"; };
+		B57040932B5D199D002587DB /* SpacerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				B570408D2B5B6FD1002587DB /* BackgroundAndOverlay.swift */,
 				B570408F2B5CEEF7002587DB /* StacksView.swift */,
 				B57040912B5CFB47002587DB /* PaddingView.swift */,
+				B57040932B5D199D002587DB /* SpacerView.swift */,
 			);
 			path = "SwiftUI-Ex";
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B56570712B59356C00F46525 /* ContentView.swift in Sources */,
+				B57040942B5D199D002587DB /* SpacerView.swift in Sources */,
 				B570408C2B5B6796002587DB /* FramesView.swift in Sources */,
 				B57040922B5CFB47002587DB /* PaddingView.swift in Sources */,
 				B56570992B59363600F46525 /* MJTextView.swift in Sources */,
